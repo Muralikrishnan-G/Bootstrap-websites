@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia-Style Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .content {
+            margin: 20px 0;
+        }
+        .sidebar {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .article-title {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .footer {
+            font-size: 0.9em;
+            margin-top: 30px;
+        }
+        .toc {
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+        }
+        .toc h4 {
+            margin-top: 0;
+        }
+        .toc ul {
+            list-style-type: none;
+            padding-left: 10px;
+        }
+        .toc ul li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">WikiSite</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Random Article</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container content">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 sidebar">
+                <h5>Navigation</h5>
+                <ul>
+                    <li><a href="#">Main Page</a></li>
+                    <li><a href="#">Contents</a></li>
+                    <li><a href="#">Featured Content</a></li>
+                    <li><a href="#">Current Events</a></li>
+                    <li><a href="#">Random Article</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-9">
+                <div class="article-title">Sample Bootstrap websites</div>
+                <p><small>From WikiSite, the free encyclopedia</small></p>
+
+                <!-- Table of Contents -->
+                <div class="toc">
+                    <h4>Contents</h4>
+                    <ul>
+                        <li><a href="#section1">1. Introduction</a></li>
+                        <li><a href="#section2">2. History</a></li>
+                        <li><a href="#section3">3. Structure</a></li>
+                        <li><a href="#section4">4. References</a></li>
+                    </ul>
+                </div>
+
+                <!-- Article Sections -->
+                <h3 id="section1">1. Introduction</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel neque non sapien suscipit scelerisque. Integer vehicula felis ac metus hendrerit, vel sollicitudin turpis dictum.</p>
+
+                <h3 id="section2">2. History</h3>
+                <p>Mauris sit amet massa et quam vehicula pretium. Praesent ac dui non lorem placerat pretium id non ligula. In hac habitasse platea dictumst.</p>
+
+                <h3 id="section3">3. Structure</h3>
+                <p>Donec vel metus dapibus, viverra nunc vel, volutpat nulla. Nam suscipit velit nec risus faucibus, in interdum elit vestibulum. Integer fermentum, lacus in scelerisque laoreet, tortor risus laoreet massa, et feugiat elit est eu metus.</p>
+
+                <h3 id="section4">4. References</h3>
+                <p>References content goes here. You can list sources, books, articles, or websites.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-light text-center">
+        <div class="container p-4">
+            <p>&copy; 2024 WikiSite. All rights reserved.</p>
+            <p>Content is available under <a href="#">Creative Commons Attribution-ShareAlike License</a>.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
